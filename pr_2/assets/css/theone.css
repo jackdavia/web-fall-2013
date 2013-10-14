@@ -441,10 +441,33 @@ h2.subhead{
 	margin-left:5px;
 	margin-top:-10px;
 	background-color: #fff;
+  color: #777;
+}
+
+h3.project-intro-title{
+  font-size: 200%;
+  font-weight: 300;
+  color: #777;
+  margin-top: 40px;
+  letter-spacing: 1px;
+}
+
+h4.project-intro-body{
+  font-size: 150%;
+  font-weight: 300;
+  line-height: 38px;
+  color: #777;
+  letter-spacing: 1px;
 }
 
 .span12.wrap{
 	margin-left:0;
+}
+
+.span11.project-intro{
+  margin-left: 5px;
+  border-bottom: 2px dashed #ccc;
+  padding-bottom: 50px;
 }
 
 .span3.circle{
