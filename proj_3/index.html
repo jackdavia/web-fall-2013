@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Second Chance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="theone.css" rel="stylesheet">
+  </head>
+<body>
+<div class="container">
+  <header>
+    <h1>Second Chance</h1>
+    <h2>[ Retrain + Reclaim + Renew ]</h2>
+  <div class="dropdown">
+    <a data-toggle="dropdown" href="#"><h2 class="feat pull-left">Featured Items</h2></a>
+    <ul id="filters" class="dropdown-menu pull-left" role="menu" aria-labelledby="dLabel">
+    <li><a href="#" data-filter=".element">All</a></li>
+    </ul> 
+  </div>
+  <div class="dropdown">
+      <a data-toggle="dropdown" href="#"><h2 class="inv pull-right">Inventory</h2></a>
+    <ul id="filters" class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+    <li><a href="#" data-filter=".arch-sal">Architectural Salvage</a></li>
+    <li><a href="#" data-filter=".kit-bath">Kitchen & Bath</a></li>
+    <li><a href="#" data-filter=".build-supp">Building Supplies</a></li>
+    <li><a href="#" data-filter=".home-furn">Home Furnishings</a></li>
+    </ul>
+  </div>
+  </header>
+  <!--<header>
+  <ul id="filters">
+  <li><a data-filter=".arch-sal" data-toggle="collapse" data-parent="#accordion" href="#architectural-salvage">Architectural Salvage</a></li>
+  <ul id="architectural-salvage" class="collapse">
+    <li>Columns</li>
+    <li>Iron Work</li>
+    <li>Mantels</li>
+    <li>Stained Glass</li>
+    <li>Unique</li>
+  </ul>
+  <li><a data-filter=".kit-bath" data-toggle="collapse" data-parent="#accordion" href="#kitchen-and-bath">Kitchen & Bath</a></li>
+  <ul id="kitchen-and-bath" class="collapse">
+    <li>Appliances</li>
+    <li>Cabinets</li>
+    <li>Kitchens</li>
+    <li>Sinks</li>
+    <li>Showers</li>
+    <li>Tubs</li>
+  </ul>
+  <li><a data-filter=".build-supp" data-toggle="collapse" data-parent="#accordion" href="#building-supplies">Building Supplies</a></li>
+  <ul id="building-supplies" class="collapse">
+    <li>Doors</li>
+    <li>Flooring</li>
+    <li>HVAC & Radiators</li>
+    <li>Lumber</li>
+    <li>Outdoors</li>
+    <li>Windows</li>
+  </ul>
+  <li><a data-filter=".home-furn" data-toggle="collapse" data-parent="#accordion" href="#home-furnishings">Home Furnishings</a></li>
+  <ul id="home-furnishings" class="collapse">
+    <li>Chairs</li>
+    <li>Bedroom</li>
+    <li>Dining & Living</li>
+    <li>Lighting</li>
+    <li>Rugs</li>
+  </ul>
+</ul>
+  </header>-->
+<div id="container" class="clickable clearfix"> 
+  <div class="element kit-bath   " data-category="kit-bath">
+    <h1>Clawfoot Bathtub</h1>
+    <img src="img/clawfoot-tub.jpg">
+  </div>
+  <div class="element kit-bath   " data-category="kit-bath">
+    <h1>Vintage Stove</h1>
+    <img src="img/vintage-stove.jpg">
+  </div>
+  <div class="element build-supp   " data-category="build-supp">
+    <h1>Radiator</h1>
+    <img src="img/radiator.jpg">
+  </div>
+  <div class="element arch-sal   " data-category="arch-sal">
+    <h1>Custom Iron Vintage Lantern</h1>
+    <img src="img/vintage-lantern.jpg">
+  </div>
+  <div class="element home-furn   " data-category="home-furn">
+    <h1>Vintage Leather Sofa</h1>
+    <img src="img/vintage-couch.jpg">
+  </div> 
+</div>
+<footer>1700 Ridgely St, Baltimore, MD 21230 | (410) 385-0435 | Fax (410) 385-0435 | Join us at <a href="#">Facebook</a> | <a href="#">Google+</a> | 9-5 Mon-Sun
+    </footer>
+</div>
+<script src="jquery-1.8.2.min.js"></script>	
+<script src="bootstrap.min.js"></script>
+<script src="jquery.isotope.min.js"></script>
+<script>
+
+    $(function(){
+      
+      var $container = $('#container');
+      
+      $container.isotope({
+        itemSelector: '.element'
+      });
+      
+    });
+
+    // cache container
+var $container = $('#container');
+// initialize isotope
+$container.isotope({
+  // options...
+});
+
+// filter items when filter link is clicked
+$('#filters a').click(function(){
+  var selector = $(this).attr('data-filter');
+  $container.isotope({ filter: selector });
+  return false;
+});
+
+$('#container').isotope({
+  masonry: {
+    columnWidth: 50
+  }
+});
+
+</script>
+</body>
+</html>

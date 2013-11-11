@@ -1,0 +1,174 @@
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=1288daec-a3bf-44db-a79d-372651422113");
+@font-face{
+font-family:"HelveticaW01-TextbookRg 709917";
+src:url("f0dab97e-1d5c-48e1-9bb3-540d0ca43719.eot?#iefix");
+src:url("f0dab97e-1d5c-48e1-9bb3-540d0ca43719.eot?#iefix") format("eot"),url("1387d745-3236-4399-a37a-0eba32a34bde.woff") format("woff"),url("90587de6-77c0-47a8-9190-c66f0b82cba4.ttf") format("truetype"),url("32fc6638-4861-4f54-90bb-5fd4d6e7f75b.svg#32fc6638-4861-4f54-90bb-5fd4d6e7f75b") format("svg");
+}
+
+body{
+	background-color: #fff;
+	font-family:"HelveticaW01-TextbookRg 709917"
+}
+
+h1{
+	font-family:"HelveticaW01-TextbookRg 709917";
+}
+
+h2{
+	font-family:"HelveticaW01-TextbookRg 709917";
+}
+
+h3{
+	word-spacing: .7em;
+	color:#000;
+}
+
+#container{
+	border:none;
+}
+
+
+.element{
+	color: black;
+	background: transparent;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+.element h1{
+	font-size: 100%;
+	white-space: pre-wrap;
+}
+
+.corner-stamp {
+	width: 400px;
+	padding: 10px;
+	float: right;
+	background: #fff;
+	color: black;
+	border: 1px solid black;
+}
+
+header{
+	color: black;
+	text-align: center;
+	border-bottom: 1px solid black;
+	margin-bottom: 1em;
+	height: 65px;
+}
+
+header h1{
+	text-align: center;
+	color: black;
+	font-size: 130%;
+	margin-bottom: .5em;
+}
+
+header h2{
+	font-size: 100%;
+	word-spacing: .2em;
+}
+
+header a h2{
+	padding: 5px 10px;
+	color: black;
+	border: 1px solid black;
+	margin-top: -10px;
+	transition: all .2s;
+	-webkit-transition: all .2s; /* Safari */
+}
+
+header a:hover h2{
+	text-decoration: none;
+	cursor: pointer;
+	background-color: black;
+	color: white;
+	transition: all .2s;
+	-webkit-transition: all .2s; /* Safari */
+}
+
+header a:focus h2{
+}
+
+header h2.feat{
+	margin-top: -35px;
+
+}
+
+header h2.inv{
+	margin-top:-35px;
+}
+
+.dropdown-menu{
+	border-radius: 0;
+	margin-top:-10px;
+	padding: 0px;
+	border:1px solid black;
+}
+
+.dropdown-menu li:first-child{
+	border-top:none;
+}
+
+.dropdown-menu li{
+	background:transparent;
+	padding: 0;
+	border-top: 1px solid black;
+}
+
+.dropdown-menu li a{
+	text-align: left;
+	font-size: 100%;
+	color:#000;
+	padding: 5px 10px;
+	transition: all .2s;
+	-webkit-transition: all .2s; /* Safari */
+}
+
+.dropdown-menu li a:hover{
+	background-image: none;
+	background-color: black;
+	color: white;
+	transition: all .2s;
+	-webkit-transition: all .2s; /* Safari */
+}
+
+
+footer{
+	border-top: 1px solid black;
+	font-size: 85%;
+	text-transform: none;
+	color: #000;
+	font-style: normal;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+footer a{
+	color: #ccc;
+}
+
+footer a:hover{
+	color: #999;
+	text-decoration: none;
+}
+
+.arch-sal{
+
+}
+
+.kit-bath{
+
+}
+
+.build-supp{
+
+}
+
+.home-furn{
+
+}
+
+
