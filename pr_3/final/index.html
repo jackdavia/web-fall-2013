@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Second Chance</title>
+   <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="theone.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  </head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="span12">
+  <header>
+    <h1>Second Chance</h1>
+    <h2 class="slogan">[ Retrain + Reclaim + Renew ]</h2>
+  <div class="dropdown">
+    <a data-toggle="dropdown" href="#"><h2 class="feat pull-left">Featured Items</h2></a>
+    <ul id="filters" class="dropdown-menu pull-left" role="menu" aria-labelledby="dLabel">
+    <li><a href="#" data-filter=".item">All</a></li>
+    </ul> 
+  </div>
+  <div class="dropdown">
+      <a data-toggle="dropdown" href="#"><h2 class="inv pull-right">Inventory</h2></a>
+    <ul id="filters" class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+    <li><a href="#" data-toggle="dropdown" class="dropdown" data-filter=".arch-sal">Architectural Salvage</a>
+      <ul class="dropdown-menu sub-menu architectural-salvage">
+      <li><a data-filter=".columns" href="#">Columns</a></li>
+      <li><a data-filter=".iron-work" href="#">Iron Work</a></li>
+      <li><a data-filter=".mantels" href="#">Mantels</a></li>
+      <li><a data-filter=".stained-glass" href="#">Stained Glass</a></li>
+      <li><a data-filter=".unique" href="#">Unique</a></li>
+      </ul>
+      </li>
+    <li><a href="#" data-toggle="dropdown" class="dropdown" data-filter=".kit-bath">Kitchen & Bath</a>
+      <ul class="dropdown-menu sub-menu kitchen-and-bath">
+      <li><a data-filter=".appliances" href="#">Appliances</a></li>
+      <li><a data-filter=".cabinets" href="#">Cabinets</a></li>
+      <li><a data-filter=".kitchens" href="#">Kitchens</a></li>
+      <li><a data-filter=".sinks" href="#">Sinks</a></li>
+      <li><a data-filter=".showers" href="#">Showers</a></li>
+      <li><a data-filter=".tubs" href="#">Tubs</a></li>
+      </ul>
+      </li>
+    <li><a href="#" data-toggle="dropdown" class="dropdown" data-filter=".build-supp">Building Supplies</a>
+      <ul class="dropdown-menu sub-menu building-supplies">
+      <li><a data-filter=".doors" href="#">Doors</a></li>
+      <li><a data-filter=".flooring" href="#">Flooring</a></li>
+      <li><a data-filter=".radiators" href="#">HVAC & Radiators</a></li>
+      <li><a data-filter=".lumber" href="#">Lumber</a></li>
+      <li><a data-filter=".outdoors" href="#">Outdoors</a></li>
+      <li><a data-filter=".windows" href="#">Windows</a></li>
+      </ul>
+      </li>
+    <li><a href="#" data-toggle="dropdown" class="dropdown" data-filter=".home-furn">Home Furnishings</a>
+      <ul class="dropdown-menu sub-menu home-furnishings">
+      <li><a data-filter=".chairs" href="#">Chairs</a></li>
+      <li><a data-filter=".bedroom" href="#">Bedroom</a></li>
+      <li><a data-filter=".dining-living" href="#">Dining & Living</a></li>
+      <li><a data-filter=".lighting" href="#">Lighting</a></li>
+      <li><a data-filter=".rugs" href="#">Rugs</a></li>
+      </li>
+      </ul>
+    </ul>
+  </div>
+  <button type="button" class="btn" data-toggle="collapse" data-target="#info">
+  <p class="info-icon">i</p>
+</button>
+ 
+<div id="info" class="collapse">
+  <div class="row-fluid info">
+  <div class="span4">
+
+  </div>
+  <div class="span4 text">
+  <p> Second Chance is a nonprofit that provides people, materials and the environment with a second chance.  We deconstruct buildings and homes, salvage usable materials and make those available to the public through our 200,000 square feet of retail space.  With the revenue generated, we provide job training and workforce development for those with employment obstacles in the Baltimore region.  
+    <div class="note">
+    <div class="block">
+    <h1>Note</h1>
+  </div>
+    <p>Due to high inventory turnover, not every item may still be for sale.</p>
+  </div>
+  </div>
+  <div class="span4 map">
+     
+  </div>
+</div>
+</div>
+  </header>
+</div>
+</div>
+<div id="container" class="clickable clearfix"> 
+  
+  <div class="item landscape isotope-item kit-bath tubs   " data-category="kit-bath tubs">
+    <img src="img/clawfoot-tub.gif">
+    <div class="text-content pull-right">
+      <h1 class="item-title">Clawfoot Bathtub<span class="item-number">#13849</span></h1>
+      <div class="price-title current"><h3 class="current">Current Price</h3></div><span class="amount">$500</span>
+      <div><div class="price-title"><h4 class="item-mkdwn">First Markdown</h4><h5 class="date">12.8.2013</h5></div><span class="amount-first">$450</span></div>
+      <div><div class="price-title"><h4 class="item-mkdwn">Second Markdown</h4><h5 class="date">2.7.2013</h5></div><span class="amount-second">$400</span></div>
+      <h5 class="item-date-added">Date Added : 10.25.13</h5>
+    </div>
+  </div>
+
+  <div class="item square isotope-item kit-bath appliances   " data-category="kit-bath appliances">
+    <img src="img/vintage-stove.gif">
+    <div class="text-content pull-right">
+      <h1 class="item-title">Vintage Stove<span class="item-number">#55037</span></h1>
+      <div class="price-title current"><h3 class="current">Current Price</h3></div><span class="amount">$250</span>
+      <div><div class="price-title"><h4 class="item-mkdwn">First Markdown</h4><h5 class="date">12.8.2013</h5></div><span class="amount-first">$225</span></div>
+      <div><div class="price-title"><h4 class="item-mkdwn">Second Markdown</h4><h5 class="date">2.7.2013</h5></div><span class="amount-second">$200</span></div>
+      <h5 class="item-date-added">Date Added : 9.21.13</h5>
+    </div>
+  </div>
+
+  <div class="item portrait isotope-item build-supp radiators   " data-category="build-supp radiators">
+    <img src="img/radiator.gif">
+    <div class="text-content pull-right">
+      <h1 class="item-title">Radiator<span class="item-number">#88688</span></h1>
+      <div class="price-title current"><h3 class="current">Current Price</h3></div><span class="amount">$375</span>
+      <div><div class="price-title"><h4 class="item-mkdwn">First Markdown</h4><h5 class="date">12.8.2013</h5></div><span class="amount-first">$300</span></div>
+      <div><div class="price-title"><h4 class="item-mkdwn">Second Markdown</h4><h5 class="date">2.7.2013</h5></div><span class="amount-second">$200</span></div>
+      <h5 class="item-date-added">Date Added : 5.11.13</h5>
+    </div>
+  </div>
+
+  <div class="item portrait isotope-item arch-sal iron-work   " data-category="arch-sal iron-work">
+    <img src="img/vintage-lantern.gif">
+    <div class="text-content pull-right">
+      <h1 class="item-title">Vintage Iron Lantern<span class="item-number">#21653</span></h1>
+      <div class="price-title current"><h3 class="current">Current Price</h3></div><span class="amount">$990</span>
+      <div><div class="price-title"><h4 class="item-mkdwn">First Markdown</h4><h5 class="date">12.8.2013</h5></div><span class="amount-first">$950</span></div>
+      <div><div class="price-title"><h4 class="item-mkdwn">Second Markdown</h4><h5 class="date">2.7.2013</h5></div><span class="amount-second">$850</span></div>
+      <h5 class="item-date-added">Date Added : 11.5.13</h5>
+    </div>
+  </div>
+
+  <div class="item landscape isotope-item home-furn dining-living   " data-category="home-furn dining-living">
+    <img src="img/vintage-couch.gif">
+    <div class="text-content pull-right">
+      <h1 class="item-title">Vintage Leather Sofa<span class="item-number">#59248</span></h1>
+      <div class="price-title current"><h3 class="current">Current Price</h3></div><span class="amount">$990</span>
+      <div><div class="price-title"><h4 class="item-mkdwn">First Markdown</h4><h5 class="date">12.8.2013</h5></div><span class="amount-first">$950</span></div>
+      <div><div class="price-title"><h4 class="item-mkdwn">Second Markdown</h4><h5 class="date">2.7.2013</h5></div><span class="amount-second">$850</span></div>
+      <h5 class="item-date-added">Date Added : 10.3.13</h5>
+    </div>
+  </div>  
+
+  <div class="item landscape isotope-item kit-bath sinks   " data-category="kit-bath sinks">
+    <img src="img/big-sink.gif">
+    <div class="text-content pull-right">
+      <h1 class="item-title">Industrial Kitchen Sink<span class="item-number">#49231</span></h1>
+      <div class="price-title current"><h3 class="current">Current Price</h3></div><span class="amount">$660</span>
+      <div><div class="price-title"><h4 class="item-mkdwn">First Markdown</h4><h5 class="date">12.8.2013</h5></div><span class="amount-first">$600</span></div>
+      <div><div class="price-title"><h4 class="item-mkdwn">Second Markdown</h4><h5 class="date">2.7.2013</h5></div><span class="amount-second">$400</span></div>
+      <h5 class="item-date-added">Date Added : 2.1.12</h5>
+    </div>
+  </div> 
+
+  <div class="item square isotope-item home-furn chairs   " data-category="home-furn chairs">
+    <img src="img/antique-chair.gif">
+    <div class="text-content pull-right">
+      <h1 class="item-title">Vintage Chair & Ottoman<span class="item-number">#77329</span></h1>
+      <div class="price-title current"><h3 class="current">Current Price</h3></div><span class="amount">$950</span>
+      <div><div class="price-title"><h4 class="item-mkdwn">First Markdown</h4><h5 class="date">12.8.2013</h5></div><span class="amount-first">$900</span></div>
+      <div><div class="price-title"><h4 class="item-mkdwn">Second Markdown</h4><h5 class="date">2.7.2013</h5></div><span class="amount-second">$875</span></div>
+      <h5 class="item-date-added">Date Added : 12.4.12</h5>
+    </div>
+  </div> 
+
+  <div class="item portrait isotope-item build-supp doors   " data-category="build-supp doors">
+    <img src="img/front-door.gif">
+    <div class="text-content pull-right">
+      <h1 class="item-title">32" x 6'8" Front Door<span class="item-number">#33699</span></h1>
+      <div class="price-title current"><h3 class="current">Current Price</h3></div><span class="amount">$100</span>
+      <div><div class="price-title"><h4 class="item-mkdwn">First Markdown</h4><h5 class="date">12.8.2013</h5></div><span class="amount-first">$75</span></div>
+      <div><div class="price-title"><h4 class="item-mkdwn">Second Markdown</h4><h5 class="date">2.7.2013</h5></div><span class="amount-second">$50</span></div>
+      <h5 class="item-date-added">Date Added : 11.20.13</h5>
+    </div>
+  </div> 
+  
+  <div class="item square isotope-item build-supp windows   " data-category="build-supp windows">
+    <img src="img/window-nine.gif">
+    <div class="text-content pull-right">
+      <h1 class="item-title">45" x 60" Window<span class="item-number">#81586</span></h1>
+      <div class="price-title current"><h3 class="current">Current Price</h3></div><span class="amount">$80</span>
+      <div><div class="price-title"><h4 class="item-mkdwn">First Markdown</h4><h5 class="date">12.8.2013</h5></div><span class="amount-first">$65</span></div>
+      <div><div class="price-title"><h4 class="item-mkdwn">Second Markdown</h4><h5 class="date">2.7.2013</h5></div><span class="amount-second">$40</span></div>
+      <h5 class="item-date-added">Date Added : 1.13.13</h5>
+    </div>
+  </div> 
+
+  <div class="item square isotope-item home-furn rugs   " data-category="home-furn rugs">
+    <img src="img/persian-rug.gif">
+    <div class="text-content pull-right">
+      <h1 class="item-title">Antique Persian Rug<span class="item-number">#39377</span></h1>
+      <div class="price-title current"><h3 class="current">Current Price</h3></div><span class="amount">$800</span>
+      <div><div class="price-title"><h4 class="item-mkdwn">First Markdown</h4><h5 class="date">12.8.2013</h5></div><span class="amount-first">$750</span></div>
+      <div><div class="price-title"><h4 class="item-mkdwn">Second Markdown</h4><h5 class="date">2.7.2013</h5></div><span class="amount-second">$700</span></div>
+      <h5 class="item-date-added">Date Added : 5.14.13</h5>
+    </div>
+  </div> 
+
+  <div class="item landscape isotope-item home-furn dining-living   " data-category="home-furn dining-living">
+    <img src="img/modern-dining-set.gif">
+    <div class="text-content pull-right">
+      <h1 class="item-title">Modern Dining Room Set<span class="item-number">#53375</span></h1>
+      <div class="price-title current"><h3 class="current">Current Price</h3></div><span class="amount">$995</span>
+      <div><div class="price-title"><h4 class="item-mkdwn">First Markdown</h4><h5 class="date">12.8.2013</h5></div><span class="amount-first">$980</span></div>
+      <div><div class="price-title"><h4 class="item-mkdwn">Second Markdown</h4><h5 class="date">2.7.2013</h5></div><span class="amount-second">$970</span></div>
+      <h5 class="item-date-added">Date Added : 8.30.13</h5>
+    </div>
+  </div> 
+ 
+  <div class="item square isotope-item build-supp flooring   " data-category="build-supp flooring">
+    <img src="img/marble-tile.gif">
+    <div class="text-content pull-right">
+      <h1 class="item-title">6" x 6" Marble Tile [600lbs]<span class="item-number">#71286</span></h1>
+      <div class="price-title current"><h3 class="current">Current Price</h3></div><span class="amount">$750</span>
+      <div><div class="price-title"><h4 class="item-mkdwn">First Markdown</h4><h5 class="date">12.8.2013</h5></div><span class="amount-first">$700</span></div>
+      <div><div class="price-title"><h4 class="item-mkdwn">Second Markdown</h4><h5 class="date">2.7.2013</h5></div><span class="amount-second">$650</span></div>
+      <h5 class="item-date-added">Date Added : 9.12.11</h5>
+    </div>
+  </div> 
+
+  <div class="item landscape isotope-item arch-sal mantels   " data-category="arch-sal mantels">
+    <img src="img/mantel-fire.gif">
+    <div class="text-content pull-right">
+      <h1 class="item-title">Mantel w/ Fireplace<span class="item-number">#71123</span></h1>
+      <div class="price-title current"><h3 class="current">Current Price</h3></div><span class="amount">$850</span>
+      <div><div class="price-title"><h4 class="item-mkdwn">First Markdown</h4><h5 class="date">12.8.2013</h5></div><span class="amount-first">$800</span></div>
+      <div><div class="price-title"><h4 class="item-mkdwn">Second Markdown</h4><h5 class="date">2.7.2013</h5></div><span class="amount-second">$750</span></div>
+      <h5 class="item-date-added">Date Added : 11.23.13</h5>
+    </div>
+  </div> 
+ 
+   <div class="item portrait isotope-item arch-sal columns   " data-category="arch-sal columns">
+    <img src="img/marble-columns.gif">
+    <div class="text-content pull-right">
+      <h1 class="item-title">Antique Marble 10' Columns<span class="item-number">#83173</span></h1>
+      <div class="price-title current"><h3 class="current">Current Price</h3></div><span class="amount">$1500</span>
+      <div><div class="price-title"><h4 class="item-mkdwn">First Markdown</h4><h5 class="date">12.8.2013</h5></div><span class="amount-first">$1100</span></div>
+      <div><div class="price-title"><h4 class="item-mkdwn">Second Markdown</h4><h5 class="date">2.7.2013</h5></div><span class="amount-second">$1050</span></div>
+      <h5 class="item-date-added">Date Added : 1.30.10</h5>
+    </div>
+  </div> 
+
+ <div class="item portrait isotope-item kit-bath cabinets   " data-category="kit-bath cabinet">
+  <img src="img/cabinet-doors.gif">
+  <div class="text-content pull-right">
+    <h1 class="item-title">Assorted Cabinet Doors<span class="item-number"></span></h1>
+    <div class="price-title current"><h3 class="current">Current Price</h3></div><span class="amount">$50-60</span>
+    <div><div class="price-title"><h4 class="item-mkdwn">First Markdown</h4><h5 class="date">12.8.2013</h5></div><span class="amount-first">$40-50</span></div>
+    <div><div class="price-title"><h4 class="item-mkdwn">Second Markdown</h4><h5 class="date">2.7.2013</h5></div><span class="amount-second">$30-40</span></div>
+    <h5 class="item-date-added">Always Receiving</h5>
+  </div>
+</div> 
+
+ <div class="item portrait isotope-item arch-sal stained-glass   " data-category="kit-bath cabinet">
+  <img src="img/stained-glass.gif">
+  <div class="text-content pull-right">
+    <h1 class="item-title">Victorian Stained Glass Window<span class="item-number">#79088</span></h1>
+    <div class="price-title current"><h3 class="current">Current Price</h3></div><span class="amount">$230</span>
+    <div><div class="price-title"><h4 class="item-mkdwn">First Markdown</h4><h5 class="date">12.8.2013</h5></div><span class="amount-first">$210</span></div>
+    <div><div class="price-title"><h4 class="item-mkdwn">Second Markdown</h4><h5 class="date">2.7.2013</h5></div><span class="amount-second">$190</span></div>
+    <h5 class="item-date-added">6.18.2013</h5>
+  </div>
+</div> 
+
+ <div class="item square isotope-item home-furn bedroom   " data-category="home-furn bedroom">
+  <img src="img/vintage-dresser.gif">
+  <div class="text-content pull-right">
+    <h1 class="item-title">Victorian 6 Drawer Dresser<span class="item-number">#56186</span></h1>
+    <div class="price-title current"><h3 class="current">Current Price</h3></div><span class="amount">$500</span>
+    <div><div class="price-title"><h4 class="item-mkdwn">First Markdown</h4><h5 class="date">12.8.2013</h5></div><span class="amount-first">$450</span></div>
+    <div><div class="price-title"><h4 class="item-mkdwn">Second Markdown</h4><h5 class="date">2.7.2013</h5></div><span class="amount-second">$400</span></div>
+    <h5 class="item-date-added">5.22.2013</h5>
+  </div>
+</div> 
+  
+  <div class="item square isotope-item home-furn bedroom   " data-category="home-furn bedroom">
+    <img src="img/uph-headboard.gif">
+    <div class="text-content pull-right">
+      <h1 class="item-title">Ubholstered Headboard<span class="item-number">#25671</span></h1>
+      <div class="price-title current"><h3 class="current">Current Price</h3></div><span class="amount">$250</span>
+      <div><div class="price-title"><h4 class="item-mkdwn">First Markdown</h4><h5 class="date">12.8.2013</h5></div><span class="amount-first">$150</span></div>
+      <div><div class="price-title"><h4 class="item-mkdwn">Second Markdown</h4><h5 class="date">2.7.2013</h5></div><span class="amount-second">$100</span></div>
+      <h5 class="item-date-added">4.12.2013</h5>
+    </div>
+  </div> 
+
+  <div class="item landscape isotope-item home-furn lighting   " data-category="home-furn lighting">
+    <img src="img/security-light.gif">
+    <div class="text-content pull-right">
+      <h1 class="item-title">Security Light<span class="item-number">#28445</span></h1>
+      <div class="price-title current"><h3 class="current">Current Price</h3></div><span class="amount">$50</span>
+      <div><div class="price-title"><h4 class="item-mkdwn">First Markdown</h4><h5 class="date">12.8.2013</h5></div><span class="amount-first">$30</span></div>
+      <div><div class="price-title"><h4 class="item-mkdwn">Second Markdown</h4><h5 class="date">2.7.2013</h5></div><span class="amount-second">$10</span></div>
+      <h5 class="item-date-added">11.14.2013</h5>
+    </div>
+  </div>
+
+  <div class="item landscape isotope-item build-supp door   " data-category="build-supp door">
+    <img src="img/door-knob.gif">
+    <div class="text-content pull-right">
+      <h1 class="item-title">Door Knobs<span class="item-number"></span></h1>
+      <div class="price-title current"><h3 class="current">Standard Price</h3></div><span class="amount">$5</span>
+      <h5 class="item-date-added">Always Receiving</h5>
+    </div>
+  </div>
+
+
+  </div>
+
+<footer>1700 Ridgely St, Baltimore, MD 21230 | (410) 385-0435 | Fax (410) 385-0435 | Join us at <a href="#">Facebook</a> | <a href="#">Google+</a> | 9-5 Mon-Sun
+</footer>
+</div>
+<script src="jquery-1.8.2.min.js"></script>	
+<script src="bootstrap.min.js"></script>
+<script src="jquery.isotope.min.js"></script>
+<script>
+
+function initialize() {
+    var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+    var mapOptions = {
+      zoom: 4,
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+    // To add the marker to the map, use the 'map' property
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title:"Hello World!"
+    });
+}
+
+
+  $(function(){
+    
+    var $container = $('#container');
+    $
+    ('#filters a').click(function(){
+     var selector = $(this).attr('data-filter');
+     $container.isotope({ filter: selector });
+     return false;
+      });
+    
+      // add randomish size classes
+      $container.find('.item').each(function(){
+        var $this = $(this),
+            number = parseInt( $this.find('.number').text(), 10 );
+        if ( number % 7 % 2 === 1 ) {
+          $this.addClass('width2');
+        }
+        if ( number % 3 === 0 ) {
+          $this.addClass('height2');
+        }
+      });
+    
+    $container.isotope({
+      itemSelector : '.item',
+      masonryHorizontal: {
+        rowHeight: 700,
+        columnWidth : 120
+      },
+      cellsByRow : {
+        columnWidth : 500,
+        rowHeight : 300
+      },
+      cellsByColumn : {
+        columnWidth : 500,
+        rowHeight : 300
+      },
+      getSortData : {
+        symbol : function( $elem ) {
+          return $elem.attr('data-symbol');
+        },
+        category : function( $elem ) {
+          return $elem.attr('data-category');
+        },
+        number : function( $elem ) {
+          return parseInt( $elem.find('.number').text(), 10 );
+        },
+        weight : function( $elem ) {
+          return parseFloat( $elem.find('.weight').text().replace( /[\(\)]/g, '') );
+        },
+        name : function ( $elem ) {
+          return $elem.find('.name').text();
+        }
+      }
+    });
+    
+    
+      var $optionSets = $('#options .option-set'),
+          $optionLinks = $optionSets.find('a');
+
+      $optionLinks.click(function(){
+        var $this = $(this);
+        // don't proceed if already selected
+        if ( $this.hasClass('selected') ) {
+          return false;
+        }w
+        var $optionSet = $this.parents('.option-set');
+        $optionSet.find('.selected').removeClass('selected');
+        $this.addClass('selected');
+  
+        // make option object dynamically, i.e. { filter: '.my-filter-class' }
+        var options = {},
+            key = $optionSet.attr('data-option-key'),
+            value = $this.attr('data-option-value');
+        // parse 'false' as false boolean
+        value = value === 'false' ? false : value;
+        options[ key ] = value;
+        if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+          // changes in layout modes need extra logic
+          changeLayoutMode( $this, options )
+        } else {
+          // otherwise, apply new options
+          $container.isotope( options );
+        }
+        
+        return false;
+      });
+
+
+    
+      // change layout
+      var isHorizontal = false;
+      function changeLayoutMode( $link, options ) {
+        var wasHorizontal = isHorizontal;
+        isHorizontal = $link.hasClass('horizontal');
+
+        if ( wasHorizontal !== isHorizontal ) {
+          // orientation change
+          // need to do some clean up for transitions and sizes
+          var style = isHorizontal ? 
+            { height: '80%', width: $container.width() } : 
+            { width: 'auto' };
+          // stop any animation on container height / width
+          $container.filter(':animated').stop();
+          // disable transition, apply revised style
+          $container.addClass('no-transition').css( style );
+          setTimeout(function(){
+            $container.removeClass('no-transition').isotope( options );
+          }, 100 )
+        } else {
+          $container.isotope( options );
+        }
+      }
+
+
+    
+      // change size of clicked element
+      $container.delegate( '.item', 'click', function(){
+        if($(this).hasClass('large')) {
+          $(this).removeClass('large');
+        } else {
+          $('.item').removeClass('large');
+          $(this).toggleClass('large');
+          window.setTimeout(function() {
+            $container.isotope('reLayout');
+          }, 500);
+        }
+      });
+
+      // toggle variable sizes of all elements
+      $('#toggle-sizes').find('a').click(function(){
+        $container
+          .toggleClass('variable-sizes')
+          .isotope('reLayout');
+        return false;
+      });
+
+
+    
+      $('#insert a').click(function(){
+        var $newEls = $( fakeElement.getGroup() );
+        $container.isotope( 'insert', $newEls );
+
+        return false;
+      });
+
+      $('#append a').click(function(){
+        var $newEls = $( fakeElement.getGroup() );
+        $container.append( $newEls ).isotope( 'appended', $newEls );
+
+        return false;
+      });
+
+
+    var $sortBy = $('#sort-by');
+    $('#shuffle a').click(function(){
+      $container.isotope('shuffle');
+      $sortBy.find('.selected').removeClass('selected');
+      $sortBy.find('[data-option-value="random"]').addClass('selected');
+      return false;
+    });
+
+
+  });
+
+
+</script>
+</body>
+</html>
