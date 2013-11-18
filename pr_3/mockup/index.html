@@ -4,105 +4,177 @@
     <title>Second Chance</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-responsive.css">
     <link href="style.css" rel="stylesheet">
     <link href="theone.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
   </head>
 <body>
-<div class="container">
+<div class="container-fluid">
   <header>
     <h1>Second Chance</h1>
     <h2>[ Retrain + Reclaim + Renew ]</h2>
+    <div class=""
   <div class="dropdown">
     <a data-toggle="dropdown" href="#"><h2 class="feat pull-left">Featured Items</h2></a>
     <ul id="filters" class="dropdown-menu pull-left" role="menu" aria-labelledby="dLabel">
-    <li><a href="#" data-filter=".element">All</a></li>
+    <li><a href="#" data-filter=".item">All</a></li>
     </ul> 
   </div>
   <div class="dropdown">
       <a data-toggle="dropdown" href="#"><h2 class="inv pull-right">Inventory</h2></a>
     <ul id="filters" class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
-    <li><a href="#" data-filter=".arch-sal">Architectural Salvage</a></li>
-    <li><a href="#" data-filter=".kit-bath">Kitchen & Bath</a></li>
-    <li><a href="#" data-filter=".build-supp">Building Supplies</a></li>
-    <li><a href="#" data-filter=".home-furn">Home Furnishings</a></li>
+    <li><a href="#" data-toggle="dropdown" class="dropdown" data-filter=".arch-sal">Architectural Salvage</a>
+      <ul class="dropdown-menu sub-menu architectural-salvage">
+      <li><a data-filter=".columns" href="#">Columns</a></li>
+      <li><a data-filter=".iron-work" href="#">Iron Work</a></li>
+      <li><a data-filter=".mantels" href="#">Mantels</a></li>
+      <li><a data-filter=".stained-glass" href="#">Stained Glass</a></li>
+      <li><a data-filter=".unique" href="#">Unique</a></li>
+      </ul>
+      </li>
+    <li><a href="#" data-toggle="dropdown" class="dropdown" data-filter=".kit-bath">Kitchen & Bath</a>
+      <ul class="dropdown-menu sub-menu kitchen-and-bath">
+      <li><a data-filter=".appliances" href="#">Appliances</a></li>
+      <li><a data-filter=".cabinets" href="#">Cabinets</a></li>
+      <li><a data-filter=".kitchens" href="#">Kitchens</a></li>
+      <li><a data-filter=".sinks" href="#">Sinks</a></li>
+      <li><a data-filter=".showers" href="#">Showers</a></li>
+      <li><a data-filter=".tubs" href="#">Tubs</a></li>
+      </ul>
+      </li>
+    <li><a href="#" data-toggle="dropdown" class="dropdown" data-filter=".build-supp">Building Supplies</a>
+      <ul class="dropdown-menu sub-menu building-supplies">
+      <li><a data-filter=".doors" href="#">Doors</a></li>
+      <li><a data-filter=".flooring" href="#">Flooring</a></li>
+      <li><a data-filter=".radiators" href="#">HVAC & Radiators</a></li>
+      <li><a data-filter=".lumber" href="#">Lumber</a></li>
+      <li><a data-filter=".outdoors" href="#">Outdoors</a></li>
+      <li><a data-filter=".windows" href="#">Windows</a></li>
+      </ul>
+      </li>
+    <li><a href="#" data-toggle="dropdown" class="dropdown" data-filter=".home-furn">Home Furnishings</a>
+      <ul class="dropdown-menu sub-menu home-furnishings">
+      <li><a data-filter=".chairs" href="#">Chairs</a></li>
+      <li><a data-filter=".bedroom" href="#">Bedroom</a></li>
+      <li><a data-filter=".dining-living" href="#">Dining & Living</a></li>
+      <li><a data-filter=".lighting" href="#">Lighting</a></li>
+      <li><a data-filter=".rugs" href="#">Rugs</a></li>
+      </li>
+      </ul>
     </ul>
   </div>
-  </header>
-  <!--<header>
-  <ul id="filters">
-  <li><a data-filter=".arch-sal" data-toggle="collapse" data-parent="#accordion" href="#architectural-salvage">Architectural Salvage</a></li>
-  <ul id="architectural-salvage" class="collapse">
-    <li>Columns</li>
-    <li>Iron Work</li>
-    <li>Mantels</li>
-    <li>Stained Glass</li>
-    <li>Unique</li>
-  </ul>
-  <li><a data-filter=".kit-bath" data-toggle="collapse" data-parent="#accordion" href="#kitchen-and-bath">Kitchen & Bath</a></li>
-  <ul id="kitchen-and-bath" class="collapse">
-    <li>Appliances</li>
-    <li>Cabinets</li>
-    <li>Kitchens</li>
-    <li>Sinks</li>
-    <li>Showers</li>
-    <li>Tubs</li>
-  </ul>
-  <li><a data-filter=".build-supp" data-toggle="collapse" data-parent="#accordion" href="#building-supplies">Building Supplies</a></li>
-  <ul id="building-supplies" class="collapse">
-    <li>Doors</li>
-    <li>Flooring</li>
-    <li>HVAC & Radiators</li>
-    <li>Lumber</li>
-    <li>Outdoors</li>
-    <li>Windows</li>
-  </ul>
-  <li><a data-filter=".home-furn" data-toggle="collapse" data-parent="#accordion" href="#home-furnishings">Home Furnishings</a></li>
-  <ul id="home-furnishings" class="collapse">
-    <li>Chairs</li>
-    <li>Bedroom</li>
-    <li>Dining & Living</li>
-    <li>Lighting</li>
-    <li>Rugs</li>
-  </ul>
-</ul>
-  </header>-->
-<div id="container" class="clickable clearfix"> 
-  <div class="element kit-bath   " data-category="kit-bath">
-    <h1>Clawfoot Bathtub</h1>
-    <img src="img/clawfoot-tub.jpg">
+  <button type="button" class="btn" data-toggle="collapse" data-target="#info">
+  <p class="info-icon">i</p>
+</button>
+ 
+<div id="info" class="collapse">
+  <div class="row-fluid info">
+  <div class="span4">
+    <img src="img/kid.gif">
   </div>
-  <div class="element kit-bath   " data-category="kit-bath">
-    <h1>Vintage Stove</h1>
-    <img src="img/vintage-stove.jpg">
+  <div class="span4 text">
+  <h1>[Our Store]</h1>
+  <p> Welcome to our online catalog!  While you enjoy browsing online, keep in mind that this is merely a sampling of the vast inventory in our store.  There are (quite literally!) tons more goodies to see and touch in person at 1700 Ridgely Street in Baltimore.  With almost 200,000 sq. ft. of retail space, you're bound to find something that fits your project or inspires you to start a new one.  To be among the first to learn about the newest and coolest additions to our inventory, be sure to sign up for our newsletter and join us on Facebook, Twitter, or Pinterest.  Hope to see you soon!
+  <h1>Note</h1>
+  <p>Due to high inventory turnover, not every item may still be for sale.</p>
+  <p>
   </div>
-  <div class="element build-supp   " data-category="build-supp">
-    <h1>Radiator</h1>
-    <img src="img/radiator.jpg">
+  <div class="span4 map">
+    <div id="map_canvas"></div>
+    <p>Located off Russell St near i95</p>
   </div>
-  <div class="element arch-sal   " data-category="arch-sal">
-    <h1>Custom Iron Vintage Lantern</h1>
-    <img src="img/vintage-lantern.jpg">
-  </div>
-  <div class="element home-furn   " data-category="home-furn">
-    <h1>Vintage Leather Sofa</h1>
-    <img src="img/vintage-couch.jpg">
-  </div> 
 </div>
+</div>
+  </header>
+<div id="container" class="clickable clearfix"> 
+  
+  <div class="item kit-bath tubs   " data-category="kit-bath tubs">
+    <div class="landscape">
+      <img src="img/clawfoot-tub.gif">
+    </div>
+    <div class="text-content">
+      <h1 class="item-title">Clawfoot Bathtub</h1>
+      <h2 class="item-number">#13849</h2>
+      <h3 class="item-price">Current Price : $500</h3>
+      <h4 class="item-mkdwn-first">First Markdown : $450</h4>
+      <h4 class="item-mkdwn-second">Second Markdown : $400</h4>
+      <h5 class="item-date-added">Date Added : 10.25.13</h5>
+    </div>
+  </div>
+
+  <div class="item kit-bath appliances   " data-category="kit-bath appliances">
+    <div class="square">
+      <img src="img/vintage-stove.gif">
+    </div>
+    <div class="text-content">    
+      <h1 class="item-title">Vintage Stove</h1>
+      <h2 class="item-number">#55037</h2>
+      <h3 class="item-price">Current Price : $250</h3>
+      <h4 class="item-mkdwn-first">First Markdown : $225</h4>
+      <h4 class="item-mkdwn-second">Second Markdown : $200</h4>
+      <h5 class="item-date-added">Date Added : 9.21.13</h5>
+    </div>
+  </div>
+
+  <div class="item build-supp radiators   " data-category="build-supp radiators">
+    <div class="portrait small">
+      <img src="img/radiator.gif">
+    </div>
+    <div class="text-content">
+      <h1 class="item-title">Radiator</h1>
+      <h2 class="item-number">#88688</h2>
+      <h3 class="item-price">Current Price : $375</h3>
+      <h4 class="item-mkdwn-first">First Markdown : $300</h4>
+      <h4 class="item-mkdwn-second">Second Markdown : $200</h4>
+      <h5 class="item-date-added">Date Added : 5.11.13</h5> 
+    </div> 
+  </div>
+
+  <div class="item arch-sal iron-work   " data-category="arch-sal iron-work">
+    <div class="portrait small">
+      <img src="img/vintage-lantern.gif">
+    </div>
+    <div class="text-content">
+      <h1 class="item-title">Custom Iron Vintage Lantern</h1>
+      <h2 class="item-number">#21653</h2>
+      <h3 class="item-price">Current Price : $1200</h3>
+      <h4 class="item-mkdwn-first">First Markdown : $1100</h4>
+      <h4 class="item-mkdwn-second">Second Markdown : $1050</h4>
+      <h5 class="item-date-added">Date Added : 11.5.13</h5>
+    </div>
+  </div>
+
+  <div class="item home-furn dining-living   " data-category="home-furn dining-living">
+    <div class="landscape small">
+      <img src="img/vintage-couch.gif">
+    </div>
+    <div class="text-content">
+      <h1 class="item-title">Vintage Leather Sofa</h1>
+      <h2 class="item-number">#21653</h2>
+      <h3 class="item-price">Current Price : $550</h3>
+      <h4 class="item-mkdwn-first">First Markdown : $500</h4>
+      <h4 class="item-mkdwn-second">Second Markdown : $450</h4>
+      <h5 class="item-date-added">Date Added : 10.30.13</h5>
+    </div>
+  </div> 
+
+</div>
+
 <footer>1700 Ridgely St, Baltimore, MD 21230 | (410) 385-0435 | Fax (410) 385-0435 | Join us at <a href="#">Facebook</a> | <a href="#">Google+</a> | 9-5 Mon-Sun
-    </footer>
+</footer>
 </div>
 <script src="jquery-1.8.2.min.js"></script>	
 <script src="bootstrap.min.js"></script>
 <script src="jquery.isotope.min.js"></script>
 <script>
-
     $(function(){
       
       var $container = $('#container');
       
       $container.isotope({
-        itemSelector: '.element'
-      });
+        itemSelector: '.item'
+     });
       
     });
 
@@ -125,6 +197,49 @@ $('#container').isotope({
     columnWidth: 50
   }
 });
+
+
+$( ".portrait" ).click(function(){
+  $container.isotope('reLayout');
+  $( this ).toggleClass( 'large' );
+});
+
+$( ".square" ).click(function(){
+  $container.isotope('reLayout');
+  $( this ).toggleClass( "large" );
+
+});
+
+$( ".landscape" ).click(function(){
+  $container.isotope('reLayout');
+  $( this ).toggleClass( "large" );
+});
+
+
+
+//google maps plug-in
+function initialize() {
+  var myLatlng = new google.maps.LatLng(39.272663,-76.632299);
+  var mapOptions = {
+    zoom: 14,
+    center: myLatlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  }
+  var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Hello World!'
+
+
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
+
 
 </script>
 </body>

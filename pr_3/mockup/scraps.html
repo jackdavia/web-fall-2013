@@ -1,0 +1,46 @@
+scraps
+
+  <div class="element   " data-category=" ">
+    <h1 class="item-title"></h1>
+    <h2 class="item-number"></h2>
+    <h3 class="item-price"></h3>
+    <h4 class="item-mkdwn-first"></h4>
+    <h4 class="item-mkdwn-second"></h4>
+    <h5 class="item-date-added"></h5>
+    <img src=" ">
+  </div>
+
+
+  <script>
+
+    $(function(){
+      
+      var $container = $('#container');
+      
+      $container.isotope({
+        itemSelector: '.element'
+     });
+      
+    });
+
+    // cache container
+var $container = $('#container');
+// initialize isotope
+$container.isotope({
+  // options...
+});
+
+// filter items when filter link is clicked
+$('#filters a').click(function(){
+  var selector = $(this).attr('data-filter');
+  $container.isotope({ filter: selector });
+  return false;
+});
+
+$('#container').isotope({
+  masonry: {
+    columnWidth: 50
+  }
+});
+
+</script>
